@@ -1,4 +1,3 @@
-// Importing icons and styles
 import IconBell from "../icons/IconBell"; // Importing Bell icon component
 import IconBookmark from "../icons/IconBookmark"; // Importing Bookmark icon component
 import IconCart from "../icons/IconCart"; // Importing Cart icon component
@@ -14,7 +13,7 @@ function Header() {
     <>
       {/* Navigation bar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid p-0 gap-4 d-flex align-items-center">
+        <div className="container-fluid p-0 gap-4 d-flex align-items-center">
           {/* HobbyCue logo */}
           <a className="navbar-brand" href="#">
             <img src="images/HobbyCueLogo.png" alt="" />
@@ -44,7 +43,13 @@ function Header() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <div className="d-flex flex-row gap-3">
+              <i className="bi bi-search"></i>
+              <a className="nav-link" aria-current="page" href="#">
+                <IconBell />
+              </a>
+              <span className="navbar-toggler-icon"></span>
+            </div>
           </button>
           {/* Navbar collapse */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -153,7 +158,7 @@ function Header() {
                 </a>
               </li>
               {/* Bell icon */}
-              <li className="nav-item">
+              <li className="nav-item d-none d-lg-block">
                 <a className="nav-link" aria-current="page" href="#">
                   <IconBell />
                 </a>

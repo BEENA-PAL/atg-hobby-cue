@@ -26,4 +26,8 @@
   .form {
     width: 100%;
   }
+  .iconBell {
+    display: none;
+    display: inline;
+  }
 }
