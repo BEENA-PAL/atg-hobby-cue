@@ -43,7 +43,7 @@ function Joinin() {
           />
         </div>
         {/* Password input */}
-        <div className="mb-3 position-relative d-flex align-items-center">
+        <div className="mb-0 position-relative d-flex align-items-center">
           <input
             type={`${show ? "text" : "password"}`}
             className="form-control"
@@ -58,6 +58,15 @@ function Joinin() {
             id="togglePassword"
             onClick={() => setShow(!show)}
           ></i>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            fontWeight: "bold",
+          }}
+        >
+          <p>Password strength</p>
         </div>
         {/* Terms of service and privacy policy */}
         <small className="d-block  text-center mb-3">
