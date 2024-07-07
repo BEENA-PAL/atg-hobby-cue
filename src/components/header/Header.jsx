@@ -150,7 +150,6 @@ function Header() {
               <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="#">
                   <IconBookmark />{" "}
-                  <span className="d-inline d-md-none">Hobbies</span>
                 </a>
               </li>
               {/* Bell icon */}
