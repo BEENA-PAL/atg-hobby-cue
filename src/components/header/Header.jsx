@@ -1,4 +1,3 @@
-
 // Importing icons and styles
 import IconBell from "../icons/IconBell"; // Importing Bell icon component
 import IconBookmark from "../icons/IconBookmark"; // Importing Bookmark icon component
@@ -168,7 +167,7 @@ function Header() {
               </li>
               {/* Sign button */}
               <li className="nav-item">
-                <button className="btn btn-outline-primary">Sign</button>
+                <button className="btn btn-outline">Sign</button>
               </li>
             </ul>
           </div>
